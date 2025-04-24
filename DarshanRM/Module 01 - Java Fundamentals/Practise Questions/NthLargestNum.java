@@ -1,8 +1,24 @@
-package org.darshan.Day2.FastestFingers;
+package org.darshan.Day2;
 
 import java.util.Scanner;
 
-public class Program5 {
+public class NthLargestNum {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Value of n : ");
+        int n = sc.nextInt();
+
+        System.out.print("Enter the numbers of array : ");
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.print("Enter which largest number you want : ");
+        int targetIndex = sc.nextInt() - 1;
+
+        findNthLargestNumber(arr, targetIndex);
+    }
 
     private static void findNthLargestNumber(int[] arr, int targetIndex) {
         sortArray(arr, 0 , arr.length - 1);
@@ -46,19 +62,5 @@ public class Program5 {
         for (int i = 0; i < temp.length; i++) {
             arr[low + i] = temp[i];
         }
-    }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-
-        int arr[] = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
-
-        int targetIndex = sc.nextInt();
-
-        findNthLargestNumber(arr, targetIndex);
     }
 }

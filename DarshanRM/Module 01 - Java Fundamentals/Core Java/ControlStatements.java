@@ -1,6 +1,6 @@
-package org.darshan;
+package org.darshan.Day1;
 
-public class Program03 {
+public class ControlStatements {
 
     private static void printDays() {
         int day = (int)(Math.random() * 7 + 1);

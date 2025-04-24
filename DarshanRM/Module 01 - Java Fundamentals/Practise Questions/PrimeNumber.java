@@ -1,8 +1,8 @@
-package org.darshan.Day2.FastestFingers;
+package org.darshan.Day2;
 
 import java.util.Scanner;
 
-public class Program2 {
+public class PrimeNumber {
     private static boolean isPrime(int n) {
         for (int i = 2; i<n; i++) {
             if(n % i == 0) {
@@ -16,7 +16,7 @@ public class Program2 {
         int count = 0;
         while (count < n) {
             if (isPrime(start)) {
-                System.out.println(start);
+                System.out.print(start + " ");
                 count++;
             }
             start++;
@@ -26,8 +26,12 @@ public class Program2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("Enter the start number from which you want prime numbers : ");
         int start = sc.nextInt();
+        System.out.print("Enter number of prime numbers you want from starting number : ");
         int n = sc.nextInt();
+
+        System.out.print(n + " prime numbers starting from " + start + " are : ");
         printNPrimeNums(start, n);
 
         sc.close();

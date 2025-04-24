@@ -1,8 +1,8 @@
-package org.darshan.Day2.FastestFingers;
+package org.darshan.Day2;
 
 import java.util.Scanner;
 
-public class Program4 {
+public class Anagram {
 
     private static String anagram(String s1, String s2) {
         if (s1.length() != s2.length()) {
@@ -16,9 +16,6 @@ public class Program4 {
         for (int i = 0; i < s1.length(); i++) {
             char c1 = s1.charAt(i);
             char c2 = s2.charAt(i);
-            if (!Character.isLetter(c1) || !Character.isLetter(c2)) {
-                return "Not anagram";
-            }
             count[c1 - 'a']++;
             count[c2 - 'a']--;
         }
@@ -34,8 +31,11 @@ public class Program4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("Enter the string 1 : ");
         String str1 = sc.nextLine();
+        System.out.println("Enter the string 2 : ");
         String str2 = sc.nextLine();
-        System.out.println(anagram(str1, str2));
+
+        System.out.println(str1 + " and " + str2 + " are " + anagram(str1, str2));
     }
 }

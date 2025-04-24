@@ -1,8 +1,8 @@
-package org.darshan;
+package org.darshan.Day1;
 
 import java.util.Arrays;
 
-public class Program01 {
+public class DataTypesPractise {
     public static void main(String[] args) {
         int num = 10;
         String name = "Darshan";

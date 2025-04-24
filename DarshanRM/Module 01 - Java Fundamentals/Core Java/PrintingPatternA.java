@@ -1,8 +1,8 @@
-package org.darshan;
+package org.darshan.Day1;
 
 import java.util.Scanner;
 
-public class Program05 {
+public class PrintingPatternA {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the value of n : ");

@@ -1,8 +1,8 @@
-package org.darshan;
+package org.darshan.Day1;
 
 import java.util.Scanner;
 
-public class Program04 {
+public class PrintingPatternDabang {
     static void mainBody(int n, int row) {
         for (int star = 0; star < n - row; star++) {
             System.out.print("*");

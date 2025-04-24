@@ -1,6 +1,6 @@
-package org.darshan;
+package org.darshan.Day1;
 
-public class Program02 {
+public class OperatorsPractise {
     public static void main(String[] args) {
         int num1 = 8, num2 = 5;
 

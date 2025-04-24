@@ -11,8 +11,11 @@ public class StackPractise {
         stack.push(8);
         stack.push(3);
 
-        while(!stack.empty()) {
+        System.out.println("Top element in stack : " + stack.peek());
+
+        while (!stack.empty()) {
             System.out.println(stack.pop());
         }
+
     }
 }

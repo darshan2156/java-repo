@@ -1,4 +1,4 @@
-package org.darshan.FunctionalProgramming.PractiseProblems;
+package org.darshan.PractiseProblems;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.darshan.FunctionalProgramming.PractiseProblems;
+package org.darshan.PractiseProblems;
 
 import java.util.ArrayList;
 import java.util.Arrays;
